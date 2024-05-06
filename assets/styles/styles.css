@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --primary-font: 'Inter', sans-serif;
+    --main-white: #FFFFFF;
+    --secondary-white:  #F9F9F9CC;
+    --secondary-gray: #C0C0C0;
+    --blue-button: #167BF7;
+    --background-color: #00030C;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+h1{
+    color: var(--main-white);
+}
+
+button:hover{
+    cursor: pointer;
+    font-family: var(--primary-font);
+}
+
+.main{
+    background-image: url("../images/background_combo.png");
+    padding: 125px 798px 124px 54px;
+}
+
+.main img{
+    width: 388px;
+    height: 100px;  
+}
+
+.main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 588px;
+    height: 431px;
+}
+
+.main button{
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--main-white);
+    background-color: transparent;
+    border: solid 1px;
+    border-color: var(--main-white);
+}
+
+button.blue{
+    background-color: var(--blue-button);
+    border-color: var(--blue-button) ;
+}
+
+.main h1{
+    font-size: 1.75rem;
+}
+
+.second{
+    padding-left: 165px;
+}
+
+.second h1{
+    font-size: 3rem;
+}
+
+.second p{
+    color: var(--secondary-white);
+    font-size: 1rem;
+}
+
+.second_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 69px;
+}
+
+.second_div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 588px;
+    height: 114px;
+}
+
+.second img{
+    width: 498px;
+    height: 560px;
+}
+
+.third{
+    padding-left: 120px;
+    padding-right: 166px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.third div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 588px;
+    height: 144px;
+}
+
+.third button{
+    padding: 16px;
+    background-color: var(--blue-button);
+    border-color: var(--blue-button);
+    border-radius: 8px;
+    color: var(--main-white);
+    width: 162px;
+    height: 56px;
+}
+
+.third button:hover{
+    border: 1px solid;
+    border-color: var(--blue-button);
+}
+
+.third p{
+    color: var(--secondary-white);
+    font-size: 1rem;
+}
+
+.third img{
+    width: 496px;
+    height: 339px;
+}
+
+.fourth{
+    padding-left: 126px;
+    padding-right: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 44px;
+}
+
+.fourth div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    width: 588px;
+    height: 114px;
+}
+
+.fourth p{
+    color: var(--secondary-white);
+    font-size: 1rem;
+}
+
+.fourth img{
+    width: 547px;
+    height: 324px;
+}
+
+.fifth{
+    padding-left: 126px;
+    padding-right: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 200px;
+    color: var(--main-white);
+}
+
+.fifth h1{
+    font-size: 3rem;
+}
+
+.fifth p{
+    color: var(--main-white);
+    font-size: 2rem;
+}
+
+.fifth div.fifth_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    width: 588px;
+    height: 114px;
+}
+
+footer{
+    padding: 70px 40px 130px 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: var(--main-white);
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1{
+    font-size: 3rem;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer a{
+    color: var(--main-white);
+    font-size: 1rem;
+    text-decoration: none;
+    gap: 20px;
+}
+
+footer p{
+    color: var(--secondary-gray);
+    font-size: 0.75rem;
+}
+
+.small{
+    color: var(--secondary-gray);
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+@media screen {
+    
+}
