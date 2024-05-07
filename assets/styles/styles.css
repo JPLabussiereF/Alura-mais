@@ -38,6 +38,7 @@ body{
     background-image: url(../images/background_combo.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
 }
@@ -102,7 +103,8 @@ body{
 .second.container div{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    text-align: start;
     gap: 0.7rem;
     width: 50%;
 }
@@ -134,13 +136,14 @@ body{
 }
 
 .devices.container{
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 16.5rem;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .devices.container h2{
@@ -167,6 +170,7 @@ body{
     align-items: center;
     text-align: center;
     padding: 3rem 16.5rem;
+    margin-top: 1rem;
     gap: 1.5rem;
     font-size: 1.3rem;
     color: var(--main-white);
@@ -190,4 +194,62 @@ body{
 .footer ul li a{
     text-decoration: none;
     color: var(--main-white);
+}
+
+@media (max-width: 1024px){
+
+    .container{
+        height: 100vh;
+    }
+    .devices.container ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        gap: 1rem;
+    }
+    .container.first div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 8rem;
+        gap: 15px;
+        background-position: center;
+        width: 100%;
+    }
+    .second.container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        gap: 3rem;
+    }
+    .second.container div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.7rem;
+        width: 50%;
+    }
+    .third.container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        gap: 3rem;
+    }
+    .third.container div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.7rem;
+        width: 50%;
+    }
 }
