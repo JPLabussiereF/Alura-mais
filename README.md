@@ -5,7 +5,8 @@
 
 <div align="center">
 
-<p style="font:bold;font-size:46px;">Alura+</p>
+<img src="./assets/images/logo.png"/>
+<br>
 <p>Um site para divulgação da Alura Plus, uma plataforma de streaming com os conteúdos educacionais da Alura.</p>
 </div>
 

@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+html{
+    font-size: 62.5%;
+}
+
 :root{
     --primary-font: 'Inter', sans-serif;
     --main-white: #FFFFFF;
     --secondary-white:  #F9F9F9CC;
     --secondary-gray: #C0C0C0;
     --blue-button: #167BF7;
+    --blue-button-hover: #2b7cdf;
     --background-color: #00030C;
 }
 
@@ -15,245 +20,174 @@
     box-sizing: border-box;
 }
 
-.container{
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+a{
+    text-decoration: none;
 }
 
 body{
     background-color: var(--background-color);
-}
-
-h1{
+    font-family: var(--primary-font);
     color: var(--main-white);
 }
 
-button:hover{
-    cursor: pointer;
+.container{
+    height: 100vh;
+}
+
+.container.first{
+    background-image: url(../images/background_combo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.container.first div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 8rem;
+    gap: 15px;
+    width: 50%;
+}
+
+.description__text{
+    font-size: 1.6rem;
+    color: var(--secondary-gray);
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+.titulo__principal{
+    color: var(--main-white);
+    font-size: 3rem;
+    font-weight: bold;
     font-family: var(--primary-font);
 }
 
-.main{
-    background-image: url("../images/background_combo.png");
-    padding: 125px 798px 124px 54px;
-}
-
-.main img{
-    width: 388px;
-    height: 100px;  
-}
-
-.main div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    width: 588px;
-    height: 431px;
-}
-
-.main button{
+.button{
+    font-size: 1.6rem;
     width: 100%;
-    padding: 16px;
-    border-radius: 8px;
+    padding: 1.6rem;
+    border-radius: 0.8rem;
     color: var(--main-white);
     background-color: transparent;
-    border: solid 1px;
+    border: solid 0.1rem;
     border-color: var(--main-white);
 }
 
-button.blue{
-    background-color: var(--blue-button);
-    border-color: var(--blue-button) ;
+.button:hover{
+    background-color: rgb(240, 240, 240);
+    color: #000;
 }
 
-.main h1{
-    font-size: 1.75rem;
-}
-
-.second{
-    padding-left: 165px;
-}
-
-.second h1{
-    font-size: 3rem;
-}
-
-.second p{
-    color: var(--secondary-white);
-    font-size: 1rem;
-}
-
-.second_div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 69px;
-}
-
-.second_div div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    width: 588px;
-    height: 114px;
-}
-
-.second img{
-    width: 498px;
-    height: 560px;
-}
-
-.third{
-    padding-left: 120px;
-    padding-right: 166px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 70px;
-}
-
-.third div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    width: 588px;
-    height: 144px;
-}
-
-.third button{
-    padding: 16px;
+.main.button{
     background-color: var(--blue-button);
     border-color: var(--blue-button);
-    border-radius: 8px;
-    color: var(--main-white);
-    width: 162px;
-    height: 56px;
 }
 
-.third button:hover{
-    border: 1px solid;
-    border-color: var(--blue-button);
+.main.button:hover{
+    background-color: var(--blue-button-hover);
+    border-color: var(--blue-button-hover);
 }
 
-.third p{
-    color: var(--secondary-white);
-    font-size: 1rem;
-}
-
-.third img{
-    width: 496px;
-    height: 339px;
-}
-
-.fourth{
-    padding-left: 126px;
-    padding-right: 141px;
+.second.container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    gap: 44px;
-}
-
-.fourth div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    width: 588px;
-    height: 114px;
-}
-
-.fourth p{
-    color: var(--secondary-white);
-    font-size: 1rem;
-}
-
-.fourth img{
-    width: 547px;
-    height: 324px;
-}
-
-.fourth h1{
-    font-size: 3rem;
-}
-
-.fifth{
-    padding-left: 126px;
-    padding-right: 141px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 200px;
-    color: var(--main-white);
-}
-
-.fifth h1{
-    font-size: 3rem;
-}
-
-.fifth p{
-    color: var(--main-white);
-    font-size: 2rem;
-}
-
-.fifth div.fifth_div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     text-align: center;
-    gap: 40px;
-    width: 588px;
-    height: 114px;
+    padding: 0 16.5rem;
+    gap: 3rem;
 }
 
-footer{
-    padding: 70px 40px 130px 90px;
+.second.container div{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    color: var(--main-white);
-    justify-content: center;
     align-items: center;
+    gap: 0.7rem;
+    width: 50%;
 }
 
-footer h1{
+.second__img{
+    width: 40%;
+}
+
+.third.container a.main.button{
+    width: auto;
+    margin-top: 1rem;
+}
+
+.third.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 16.5rem;
+    gap: 3rem;
+}
+
+.third.container div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    gap: 0.7rem;
+    width: 50%;
+}
+
+.devices.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 16.5rem;
+    gap: 3rem;
+}
+
+.devices.container h2{
+    font-size: 4rem;
+}
+.devices.container ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.devices.container li{
+    font-family: var(--primary-font);
+    font-weight: bold;
     font-size: 3rem;
 }
 
-footer div{
+.footer{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 20px;
-}
-
-footer a{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 16.5rem;
+    gap: 1.5rem;
+    font-size: 1.3rem;
     color: var(--main-white);
-    font-size: 1rem;
+}
+
+.footer img{
+    padding-bottom: 1rem;
+}
+
+.footer p{
+    color: var(--secondary-gray);
+    font-size: 1.3rem;
+}
+
+.footer ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.footer ul li a{
     text-decoration: none;
-    gap: 20px;
-}
-
-footer p{
-    color: var(--secondary-gray);
-    font-size: 0.75rem;
-}
-
-.small{
-    color: var(--secondary-gray);
-    font-size: 1rem;
-    margin-top: 10px;
-}
-
-@media screen {
-    
+    color: var(--main-white);
 }
